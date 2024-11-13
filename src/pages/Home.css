@@ -1,0 +1,16 @@
+.home__bg {
+    background-image: url("https://i.pinimg.com/originals/ba/45/64/ba45640767d3711ed5b6de14ca353f2b.jpg");
+    height: 92vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.home-message-icon {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 2rem;  /* Size of the icon */
+    color: white;   /* Green color */
+    margin-top: 20px
+}
