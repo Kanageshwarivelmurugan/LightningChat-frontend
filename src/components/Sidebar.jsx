@@ -35,7 +35,7 @@ function Sidebar() {
 
 // Fetch available rooms (groups) from the backend
 function getRooms() {
-  fetch("https://lightningchat-backend.onrender.com/api/groups") // Updated the endpoint to fetch groups
+  fetch("http://localhost:3000/api/groups") // Updated the endpoint to fetch groups
     .then((res) => res.json())
     .then((data) => setGroups(data)) // Set groups in state
     .catch((error) => console.error("Error fetching groups:", error));
@@ -43,7 +43,7 @@ function getRooms() {
 
 // Fetch available members (users) from the backend
 function getMembers() {
-  fetch("https://lightningchat-backend.onrender.com/api/users")
+  fetch("http://localhost:3000/api/users")
     .then((res) => res.json())
     .then((data) => setMembers(data))
     .catch((error) => console.error("Error fetching members:", error));
@@ -96,7 +96,7 @@ function orderIds(id1, id2) {
   };
 
     // Send group data to the backend to create the new group
-    fetch("https://lightningchat-backend.onrender.com/api/groups", {
+    fetch("http://localhost:3000/api/groups", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
