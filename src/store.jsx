@@ -22,16 +22,9 @@ const persistConfig = {
     blackList: [appApi.reducerPath],
 };
 
-// persist our store
 
 const persistedReducer = persistReducer(persistConfig, reducer);
 
-/* creating the store
-
-const store = configureStore({
-    reducer: persistedReducer,
-    middleware: [thunk, appApi.middleware],
-});*/
 
 const store = configureStore({
     reducer: persistedReducer,

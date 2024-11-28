@@ -25,10 +25,10 @@ function Sidebar() {
  // Fetch all groups from the backend when the component is mounted or user logs in
  useEffect(() => {
   if (user) {
-    setCurrentRoom("Family"); // Default room
+    setCurrentRoom("Mine"); // Default room
     getRooms(); // Fetch rooms
     getMembers(); // Fetch members
-    socket.emit("join-room", "Family"); // Join default room
+    socket.emit("join-room", "Mine"); // Join default room
     socket.emit("new-user"); // Notify server about the new user
   }
 }, [user]);
