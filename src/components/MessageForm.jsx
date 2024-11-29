@@ -95,7 +95,7 @@ function MessageForm() {
     <>
       <div className="messages-output">
         {user && !privateMemberMsg?._id && (
-          <div className="alert alert-info">You are in the {currentRoom} Group</div>
+          <div className="alert alert-info">You are in the {currentRoom} GROUP</div>
         )}
         {user && privateMemberMsg?._id && (
           <div className="alert alert-info conversation-info">
